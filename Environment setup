@@ -1,0 +1,78 @@
+1. Install Node.js
+2. Install Visual Studio Code (VSCode)
+3. Create a New Project Folder
+4. Initialize a Node.js Project
+5. Install Cypress
+6. Open Cypress Test Runner
+7. Running Cypress Tests
+8. Adding Cypress to GitHub Repository
+
+
+---
+
+## **Cypress Environment Setup**  
+
+Follow these steps to set up **Cypress** in your project:  
+
+### **1. Install Node.js**  
+- Download and install the **LTS version** of [Node.js](https://nodejs.org/).  
+- Verify installation by running:  
+  ```
+  node -v
+  npm -v
+  ```  
+
+### **2. Install Visual Studio Code (VSCode)**  
+- Download and install [VSCode](https://code.visualstudio.com/).  
+
+### **3. Create a New Project Folder**  
+- Open **VSCode** and create a new folder for your Cypress project.  
+- Open the folder in **VSCode**.  
+
+### **4. Initialize a Node.js Project**  
+- Open **Terminal/CMD** and navigate to your project folder.  
+- Run the following command to create a `package.json` file:  
+  ```
+  npm init -y
+  ```  
+
+### **5. Install Cypress**  
+- Run the following command to install Cypress as a development dependency:  
+  ```
+  npm install cypress --save-dev
+  ```  
+
+### **6. Open Cypress Test Runner**  
+- Start Cypress using one of the following commands:  
+  ```
+  npx cypress open
+  ```  
+  **OR**  
+  ```
+  node_modules/.bin/cypress open
+  ```  
+
+### **7. Running Cypress Tests**  
+- To run tests in **headless mode** (without UI), use:  
+  ```
+  npx cypress run
+  ```  
+
+### **8. Adding Cypress to GitHub Repository**  
+- Create a `.gitignore` file and add the following lines to exclude unnecessary files:  
+  ```
+  node_modules/
+  cypress/screenshots/
+  cypress/videos/
+  ```  
+- Commit and push your project to GitHub:  
+  ```
+  git init
+  git add .
+  git commit -m "Initial Cypress setup"
+  git branch -M main
+  git remote add origin <your-github-repo-url>
+  git push -u origin main
+  ```  
+
+
